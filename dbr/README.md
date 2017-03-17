@@ -2,21 +2,21 @@
 ```go
 //NULL許可のカラムはdbr.NULLStringのようにしないとだめ
 type User struct {
-	Uid         int            `db:"uid"`
-	Username    string         `db:"username"`
-	Email       string         `db:"email"`
-	Password    dbr.NullString `db:"password"`
-	Facebook_id dbr.NullString `db:"facebook_id"`
-	Last_login  int            `db:"last_login"`
-	Delete_flg  int            `db:"delete_flg"`
-	Created     int            `db:"created"`
-	Modified    int            `db:"modified"`
+  Uid         int            `db:"uid"`
+  Username    string         `db:"username"`
+  Email       string         `db:"email"`
+  Password    dbr.NullString `db:"password"`
+  Facebook_id dbr.NullString `db:"facebook_id"`
+  Last_login  int            `db:"last_login"`
+  Delete_flg  int            `db:"delete_flg"`
+  Created     int            `db:"created"`
+  Modified    int            `db:"modified"`
 }
 
 //接続
 conn, err := dbr.Open("mysql", "username:password@tcp(host:port)/dbname", nil)
 if err != nil {
-	panic(err)
+  panic(err)
 }
 sess := conn.NewSession(nil)
 
@@ -24,7 +24,7 @@ sess := conn.NewSession(nil)
 var users []User
 count, err := sess.Select("*").From("user_table").Load(&users)
 if err != nil {
-	fmt.Println(err)
+  fmt.Println(err)
 }
 fmt.Println(count)
 fmt.Println(users[1].Password.String)
@@ -57,6 +57,6 @@ type NullBool struct {
 //dbr独自のNULL許容
 type NullTime struct {
   Time  time.Time
-	Valid bool // Valid is true if Time is not NULL
+  Valid bool // Valid is true if Time is not NULL
 }
 ```
