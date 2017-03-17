@@ -22,7 +22,7 @@ sess := conn.NewSession(nil)
 
 //select
 var users []User
-count, err := sess.Select("*").From("fl_user").Load(&users)
+count, err := sess.Select("*").From("user_table").Load(&users)
 if err != nil {
 	fmt.Println(err)
 }
