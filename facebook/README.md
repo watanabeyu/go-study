@@ -37,7 +37,7 @@ util.MapToStruct(response, &fbresponse)
 
 ## mapToStruct
 ```golang
-func mapToStruct(m map[string]interface{}, val interface{}) error {
+func MapToStruct(m map[string]interface{}, val interface{}) error {
   tmp, err := json.Marshal(m)
   if err != nil {
     return err

@@ -52,7 +52,7 @@ func main() {
 
 	//response to struct
 	var fbresponse fbResponse
-	mapToStruct(response, &fbresponse)
+	MapToStruct(response, &fbresponse)
 
 	fmt.Println(fbresponse)
 }
