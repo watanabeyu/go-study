@@ -3,6 +3,10 @@
     * reflect
   * [Go言語入門 vol.4 – Goの型アサーションについて –](http://tech.oga-ria.com/introduction-of-go-vol4/)
     * interface{}のアサーション
+  * [golang は ゆるふわに JSON を扱えまぁす!](https://www.kaoriya.net/blog/2016/06/25/)
+    * ネストされたmapの処理
+  * [#golang mapからstructに変換するには？](http://kwmt27.net/index.php/2013/10/13/how-to-convert-from-map-to-struct/)
+    * MapToStruct
 * DB
   * [Golang+Echo+dbrでMySQLのCRUDをする／JSONでDBの値を返却する話](http://qiita.com/CST_negi/items/5e276ddc0412cefef7e3)
     * echo
