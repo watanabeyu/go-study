@@ -13,7 +13,9 @@
 ```
 
 ### structはこうしよう
-FormValueで受け取ろうとするとうまくいかないので、structを使うべき
+FormValueで受け取ろうとするとうまくいかないので、structを使うべき  
+-> **送信側のfetchがおかしかったため、問題なし**
+-> **ただどちらにしろstruct使うと簡単(その場合はformタグを使う)**
 ```golang
 type LoginForm struct {
   Email    string                 `json:"email"`
@@ -45,10 +47,10 @@ import (
 )
 
 type LoginForm struct {
-  Email    string                 `json:"email"`
-  Password string                 `json:"password"`
-  Foo      map[string]string      `json:"foo"`
-  Hoge     []string               `json:"hoge"`
+  Email    string                 `json:"email" form:"email"`
+  Password string                 `json:"password" form:"password"`
+  Foo      map[string]string      `json:"foo" form:"foo"`
+  Hoge     []string               `json:"hoge" form:"hoge"`
 }
 
 func Login(c echo.Context) error {
