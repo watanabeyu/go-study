@@ -19,6 +19,9 @@
   * [【個人メモ】設定ファイルフォーマットにはTOMLがいいのかも](http://qiita.com/futoase/items/fd697a708fcbcee104de)
 * echo
   * [[Golang] EchoのUseの挙動について](http://shamaton.orz.hm/blog/archives/293)
+    * middlewreを使う
+  * [Extending Context](https://echo.labstack.com/guide/context#extending-context)
+    * contextを拡張してmiddlewareに入れて引き継ぐ
 * 全体的に説明してるやつ
   * [Rubyの会社のフロントエンドエンジニアが、GolangでAPIサーバーを開発してみる。](http://qiita.com/panicdragon/items/cb36c97ca94daa20e8f6)
     * gin
