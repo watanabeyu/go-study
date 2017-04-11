@@ -7,6 +7,8 @@
     * ネストされたmapの処理
   * [#golang mapからstructに変換するには？](http://kwmt27.net/index.php/2013/10/13/how-to-convert-from-map-to-struct/)
     * MapToStruct
+  * [golangでtemplateのExecute結果をローカル変数に受け取る](http://gosite.a2dev.org/item/36)
+    * templateを読み込んで文字列に
 * DB
   * [Golang+Echo+dbrでMySQLのCRUDをする／JSONでDBの値を返却する話](http://qiita.com/CST_negi/items/5e276ddc0412cefef7e3)
     * echo
