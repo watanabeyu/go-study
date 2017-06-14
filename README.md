@@ -32,3 +32,12 @@
   * [その２ ファイル分割してみる - golang製Web Framework 「echo」事始め](http://omiend.hatenablog.jp/entry/2017/01/31/203314)
     * echo
     * ディレクトリ構成
+
+## ■ライブラリ
+* Webフレームワーク：[labstack/echo](https://github.com/labstack/echo)
+* AWS：[goamz/goamz](https://github.com/goamz/goamz)
+* MySQL：[gocraft/dbr](https://github.com/gocraft/dbr)
+* Toml(config)：[BurntSushi/toml](https://github.com/BurntSushi/toml)
+* Redis：[go-redis/redis](https://github.com/go-redis/redis)
+* 静的ファイルのバイナリ化：[jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata)
+* Facebook Api：[huandu/facebook](https://github.com/huandu/facebook)
